@@ -1,0 +1,63 @@
+
+#include <iostream>
+using namespace std;
+class test
+{
+
+int TestCode;
+
+char Description[50];
+
+int NoCandidate;
+
+int CenterReqd;
+
+int CALCNTR();
+
+
+public:
+
+void SCHEDULE()
+{
+cout << "Enter testcode:";
+cin >> TestCode;
+cout << "Enter discription:";
+cin >> Description;
+cout << "Enter a number of candidate:";
+cin >> NoCandidate;
+
+}
+
+void DISPTEST()
+
+{
+cout << "testcode: "<< TestCode << endl;
+cout << "discription: " << Description << endl;
+cout << "number of candidate: " << NoCandidate << endl;
+cout << "Center Required:" << CALCNTR();
+}
+};
+
+int test::CALCNTR()
+
+{
+
+CenterReqd = (NoCandidate / 100 + 1);
+
+return CenterReqd;
+
+}
+
+int main()
+
+{
+
+class test obj;
+
+obj.SCHEDULE();
+
+obj.DISPTEST();
+
+
+return 0;
+ }
