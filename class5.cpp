@@ -37,7 +37,7 @@ void DISPLAYINFO()
             
     }
     
-    cout<<"student's average marks:"<<GETAVG(average );
+    cout<<""<<name<<"'s average marks:"<<GETAVG(average );
 }
 
 };

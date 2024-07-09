@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
-class area
+class calc
 {
     public:
-    area(int length)
+   void area(int length)
     {
         cout<<"Enter length of square:";
         cin>>length;
@@ -13,7 +13,7 @@ class area
         cout<<"*********************************************************"<<endl;
     
     }
-    area(int length,int width)
+    void area(int length,int width)
     {
         cout<<"Enter length of rectangle:";
         cin>>length;
@@ -24,7 +24,7 @@ class area
         cout<<"Area of Rectangle="<<area2<<endl;
         cout<<"*********************************************************"<<endl;
     }
-    area(float radius,float height,int a)
+   void area(float radius,float height,int a)
     {
         cout<<"Enter radius of Cylinder:";
         cin>>radius;
@@ -41,6 +41,9 @@ class area
 int main()
 {
     int length,width,height,radius,a;
-    area cube(length), cuboid(length,width), circle(radius,height,a);
+    class calc obj;
+    obj.area(length);
+    obj.area(length,width);
+    obj.area(radius,height,a);
     return 0;
 }
