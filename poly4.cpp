@@ -31,9 +31,18 @@ class complex
 };
 int main()
 {
+    int a,b,c,d;
+    cout<<"Enter number a:";
+    cin>>a;
+    cout<<"Enter number b:";
+    cin>>b;
     complex s1,s2,s3;
-    s1=complex(3,6);
-    s2=complex(2,7);
+    s1=complex(a,b);
+    cout<<"Enter number c:";
+    cin>>c;
+    cout<<"Enter number d:";
+    cin>>d;
+    s2=complex(c,d);
     cout<<"First object"<<endl;
     s1.display();
     cout<<"Second object"<<endl;
